@@ -4,6 +4,11 @@ from PIL import Image, ImageTk
 from selenium import webdriver
 import time
 import pyautogui
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+
+binary = FirefoxBinary("C:\\Users\\dwive\\OneDrive\\Desktop\\Tor Browser\\Browser\\firefox.exe")
+profile = FirefoxProfile("C:\\Users\\dwive\\OneDrive\\Desktop\\Tor Browser\\Browser\\TorBrowser\\Data\\Browser\\profile.default")
 
 height = pyautogui.size()[1]
 width = pyautogui.size()[0]
@@ -81,7 +86,8 @@ def start():
                 return
 
     while loop:
-        driver = webdriver.Firefox()
+        # driver = webdriver.Firefox(executable_path="D:\\projects\\blog bot\\YoutubeBot\\Firefox\\geckodriver.exe")
+        driver = webdriver.Firefox(profile, binary,executable_path="D:\\projects\\blog bot\\YoutubeBot\\Firefox\\geckodriver.exe")
         driver.get(url_input.get().strip())
         plybtn = driver.find_element_by_class_name("ytp-play-button")
         time.sleep(3)

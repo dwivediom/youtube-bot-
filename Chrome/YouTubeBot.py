@@ -2,6 +2,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 from PIL import Image, ImageTk
 from selenium import webdriver
+# from webdriver_manager.chrome import ChromeDriverManager
 import time
 import pyautogui
 
@@ -71,13 +72,16 @@ def start():
                 return
 
     while loop:
-        driver = webdriver.Chrome()
+        # driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+        driver = webdriver.Chrome(executable_path="D:\\projects\\blog bot\\YoutubeBot\\Chrome\\chromedriver.exe")
         driver.get(url_input.get().strip())
-        plybtn = driver.find_element_by_class_name("ytp-play-button")
+        # plybtn = driver.find_element_by_class_name("ytp-play-button")
         time.sleep(3)
         # ---> If the video doesnt start playing within three seconds of opening, then disable this  <--- #
-        plybtn.click()                      
+        # plybtn.click() 
+        driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")                    
         time.sleep(dur)
+        
         driver.close()
         loop -= 1
     

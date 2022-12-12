@@ -1,0 +1,60 @@
+1670867817470	mozrunner::runner	INFO	Running command: "C:\\Users\\dwive\\OneDrive\\Desktop\\Tor Browser\\Browser\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\dwive\\AppData\\Local\\Temp\\rust_mozprofileWVHYZX"
+console.info: SecurityLevel: Listening for messages from NoScript.
+console.info: SecurityLevel: Initializing security-prefs.js
+console.info: SecurityLevel: security-prefs.js initialization complete
+console.info: TorProtocolService: SOCKS port type: TCP
+console.info: TorProtocolService: SOCKS host: 127.0.0.1
+console.info: TorProtocolService: SOCKS port: 9150
+1670867819438	Marionette	INFO	Marionette enabled
+1670867819456	Marionette	INFO	Listening on port 62714
+console.debug: TorProtocolService: 
+  TorProtocolService initialized
+console.debug: TorMonitorService: 
+  TorMonitorService initialized
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: init()"
+console.log: "TorConnect: Entering Initial state"
+console.log: "TorConnect: Observing topic 'TorProcessExited'"
+console.log: "TorConnect: Observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: Observing topic 'torsettings:ready'"
+Shutting down due to socket process crash.
+1670867819696	Marionette	INFO	Stopped listening on port 62714
+console.error: "getTorFile: cannot get torrc-defaults" (new Error("torrc-defaults file not found: C:\\Users\\dwive\\OneDrive\\Desktop\\Tor Browser\\Browser\\TorBrowser\\Tor\\torrc-defaults", "resource://gre/modules/TorLauncherUtil.jsm", 245))
+console.error: TorProcess: 
+  startTor error:
+  Message: TypeError: torrcDefaultsFile is null
+  Stack:
+    _makeArgs@resource://gre/modules/TorProcess.jsm:285:23
+start@resource://gre/modules/TorProcess.jsm:81:12
+
+JavaScript error: resource://gre/modules/TorMonitorService.jsm, line 218: TypeError: this._torProcess is null
+1670868106812	mozrunner::runner	INFO	Running command: "C:\\Users\\dwive\\OneDrive\\Desktop\\Tor Browser\\Browser\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\dwive\\AppData\\Local\\Temp\\rust_mozprofileLzPUMr"
+console.info: SecurityLevel: Listening for messages from NoScript.
+console.info: SecurityLevel: Initializing security-prefs.js
+console.info: SecurityLevel: security-prefs.js initialization complete
+console.info: TorProtocolService: SOCKS port type: TCP
+console.info: TorProtocolService: SOCKS host: 127.0.0.1
+console.info: TorProtocolService: SOCKS port: 9150
+1670868108604	Marionette	INFO	Marionette enabled
+1670868108624	Marionette	INFO	Listening on port 62947
+console.debug: TorProtocolService: 
+  TorProtocolService initialized
+console.debug: TorMonitorService: 
+  TorMonitorService initialized
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: init()"
+console.log: "TorConnect: Entering Initial state"
+console.log: "TorConnect: Observing topic 'TorProcessExited'"
+console.log: "TorConnect: Observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: Observing topic 'torsettings:ready'"
+Shutting down due to socket process crash.
+1670868108857	Marionette	INFO	Stopped listening on port 62947
+console.error: "getTorFile: cannot get torrc-defaults" (new Error("torrc-defaults file not found: C:\\Users\\dwive\\OneDrive\\Desktop\\Tor Browser\\Browser\\TorBrowser\\Tor\\torrc-defaults", "resource://gre/modules/TorLauncherUtil.jsm", 245))
+console.error: TorProcess: 
+  startTor error:
+  Message: TypeError: torrcDefaultsFile is null
+  Stack:
+    _makeArgs@resource://gre/modules/TorProcess.jsm:285:23
+start@resource://gre/modules/TorProcess.jsm:81:12
+
+JavaScript error: resource://gre/modules/TorMonitorService.jsm, line 218: TypeError: this._torProcess is null
